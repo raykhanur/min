@@ -1,0 +1,14 @@
+create table enu (
+ stdId integer primary key,
+ name text not null,
+ surname text not null,
+ age text not null,
+ top text not null
+);
+
+insert into enu values (1, 'Raikhan', 'NUrkhatova', '17', 'IS-15');
+insert into enu values (2, 'Nazerke', 'Khalyk', '17', 'IS-15');
+insert into enu values (3, 'Olzhas', 'Sulleimen', '17', 'IS-15');
+
+SELECT MIN(stdId) AS min_value
+FROM enu;
